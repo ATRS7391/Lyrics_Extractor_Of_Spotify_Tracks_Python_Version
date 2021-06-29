@@ -114,7 +114,7 @@ class GetLyrics:
 
             lyrics = str(html_content.find("div", class_=re.compile("^lyrics$|Lyrics__Root")).get_text())
             lyrics = re.sub(r"(\[.*?])*", "", lyrics).strip()
-            lyrics = lyrics.replace("EmbedShare Url:CopyEmbed:Copy", "")
+            lyrics = lyrics.replace("EmbedShare Url:CopyEmbed:Copy", "").strip()
 
             self.title = title  # Name of the track
             self.artist = artist  # Name of the artist
