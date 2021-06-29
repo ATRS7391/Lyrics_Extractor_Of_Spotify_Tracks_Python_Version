@@ -1,0 +1,21 @@
+1. Make a folder named 'Lyrics' in the same directory of 'LyricsExtractor.py'.
+
+2. Go to 'https://genius.com/api-clients/new'. Login if required then make a new API Client. Then copy the Client
+Secret. Then paste in 'API_Credentials.json''s "Genius_Client_Secret" key value which now is "None". Make sure they are
+within double quotes.
+
+3. Go to 'https://developer.spotify.com/dashboard/applications'. Login if required, then click on 'CREATE AN APP'. Make
+one quickly then copy the 'Client ID' and 'Client Secret'. Then paste them in their respective keys in
+'API_Credentials.json'
+
+4. Now open Spotify and then copy the url of the track or playlist of which you want to get lyrics.
+
+5. Open 'LyricsExtractor.py' then wait. Wait for the program to install required modules and packages. [First time only]
+Then it will automatically start extracting the lyrics.
+
+6. After successful extraction of lyrics, open 'Lyrics' folder.
+
+
+NOTE: After getting and pasting the correct API Credentials in the proper place, you may need to wait for sometime.
+NOTE 2: If it doesn't works, make sure Python 3 or above is installed. If still doesn't then open with Powershell
+or Command Prompt for Windows and Terminal for MacOS.

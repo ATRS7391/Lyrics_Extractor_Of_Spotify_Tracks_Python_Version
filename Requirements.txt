@@ -1,0 +1,5 @@
+certifi
+requests
+spotipy
+urllib3
+bs4
