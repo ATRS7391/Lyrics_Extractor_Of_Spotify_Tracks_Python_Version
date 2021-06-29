@@ -362,4 +362,6 @@ elif query_type == "Track":
         input()
         quit()
 
-print(f"\n\n [✓] Successfully all the task is done. Now you can check for the lyrics in 'Lyrics' folder. \n\n ")
+print(f"\n\n [✓] Successfully all the task is done. Now you can check for the lyrics in 'Lyrics' folder. Press any key to exit.\n\n ")
+input()
+quit()
