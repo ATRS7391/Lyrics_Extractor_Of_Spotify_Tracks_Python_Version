@@ -12,7 +12,7 @@ A program/tool written in Python that extract the lyrics of a Spotify track usin
 ## Instructions
 
 1. Make a new folder named `Lyrics` in the same directory of `LyricsExtractor.py`.
-2. Make a new `Genius API-Client` by clicking [here](https://genius.com/api-clients/new). Login if required. Copy the `Client Secret` and then paste it in `API_Credentials.json` in the correct key value place.
+2. Make a new `Genius API-Client` by clicking [here](https://genius.com/api-clients/new). Login if required. Copy the `Client Access Token` and then paste it in `API_Credentials.json` in the correct key value place.
 3. Make a new `Spotify API-Application` by clicking [here](https://developer.spotify.com/dashboard/applications). Login if required. Then click on `CREATE AN APP`. Copy `Client ID` and `Client Secret` and then paste it in their respective values in `API_Credentials.json`.
 4. Now install the required packages using `pip install Requirements.txt` in Powershell/Command Prompt opened in the same directory of `Requirements.txt`.
 5. Now fire up your `Spotify` then copy the URL of the track or playlist you want to get lyrics.
