@@ -98,13 +98,6 @@ class GetLyrics:
         query = str(query)
         api_key = str(api_key)
         try:
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)      Chrome/74.0.3729.169 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
-                'Accept-Encoding': 'none',
-                'Accept-Language': 'en-US,en;q=0.8',
-                'Connection': 'keep-alive'}
             url = "https://api.genius.com/search?access_token=" + api_key + "&q=" + query.replace("&",
                                                                                                   "and").replace(
                 "by", "-").replace(" ", "%20")
@@ -115,7 +108,7 @@ class GetLyrics:
             artist = str(json_results["response"]["hits"][0]["result"]["primary_artist"]["name"])
             genius_url = str(json_results["response"]["hits"][0]["result"]["url"])
             url1 = genius_url
-            r = requests.get(url1, headers=headers)
+            r = requests.get(url1)
             htmlcontent = r.content
             html_content = BeautifulSoup(htmlcontent.decode("utf-8").replace("<br/>", "\n"), "html.parser")
 
