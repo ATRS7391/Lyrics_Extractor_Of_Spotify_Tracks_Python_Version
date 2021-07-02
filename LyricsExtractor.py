@@ -232,7 +232,7 @@ try:
     api_data = json.load(api_credentials)
     spotify_client_id = api_data["API_Credentials"]["Spotify_Client_ID"]
     spotify_client_secret = api_data["API_Credentials"]["Spotify_Client_Secret"]
-    genius_client_secret = api_data["API_Credentials"]["Genius_Client_Secret"]
+    genius_client_secret = api_data["API_Credentials"]["Genius_Client_Access_Token"]
 
     if spotify_client_id == "None" or spotify_client_secret == "None" or genius_client_secret == "None":
         print(" [x] Any field in 'API_Credentials.json' is empty. Please read "
