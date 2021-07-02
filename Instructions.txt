@@ -1,7 +1,7 @@
 1. Make a folder named 'Lyrics' in the same directory of 'LyricsExtractor.py'.
 
 2. Go to 'https://genius.com/api-clients/new'. Login if required then make a new API Client. Then copy the Client
-Secret. Then paste in 'API_Credentials.json''s "Genius_Client_Secret" key value which now is "None". Make sure they are
+Access Token. Then paste in 'API_Credentials.json''s "Genius_Client_Access_Token" key value which now is "None". Make sure they are
 within double quotes.
 
 3. Go to 'https://developer.spotify.com/dashboard/applications'. Login if required, then click on 'CREATE AN APP'. Make
