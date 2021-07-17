@@ -112,9 +112,10 @@ class GetLyrics:
             htmlcontent = r.content
             html_content = BeautifulSoup(htmlcontent.decode("utf-8").replace("<br/>", "\n"), "html.parser")
 
-            lyrics = str(html_content.find("div", class_=re.compile("^lyrics$|Lyrics__Root")).get_text())
+            lyrics = str(html_content.find("div", class_=re.compile("^lyrics$|Lyrics__Root")))
+            lyrics = re.sub(r"(<.*?>)*", "", lyrics)
             lyrics = re.sub(r"(\[.*?])*", "", lyrics).strip()
-            lyrics = lyrics.replace("EmbedShare Url:CopyEmbed:Copy", "").strip()
+            lyrics = lyrics.replace("EmbedShare Url:CopyEmbed:Copy", "").replace("EmbedShare URLCopyEmbedCopy", "").strip()
             lyrics = re.sub('\n\n+', '\n\n', lyrics)
 
             self.title = title  # Name of the track
